@@ -1,13 +1,12 @@
 # The TimeFlo Project: Requirements Document
-*Author Name 2021*
+*Joel Crouch 2021*
 
 (*Thanks to Chris Gilmore for the document template for this
 document.*)
 
 ## Introduction
 
-*Introduce this document and the project it describes. You should also
-summarize the remaining content of the document here.*
+*This is the time-flo Pomodoro style timer requiremnents document.  This requirements document will describe the scope, audience, define necessary terms, how the time-flo timer works, and describe the requirements for the client,and developer.*
 
 ### Purpose and Scope
 
@@ -15,7 +14,7 @@ summarize the remaining content of the document here.*
 
 ### Target Audience
 
-*Describe the target audience for this document.*
+*The target audience for this document is developer and end-user.*
 
 ### Terms and Definitions
 
