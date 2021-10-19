@@ -5,7 +5,10 @@ TimeFlo is an implementation of a
 [Pomodoro&reg;](https://en.wikipedia.org/wiki/Pomodoro_Technique)-like
 timer for breaking out of flow state.
 
-*Description of your TimeFlo timer.*
+This time flow timer will be a Pomodoro style countdown timer.  It will have three "work" intervals, and three "break" intervals.  The timer will allow the user to change the work interval, and the rest interval.  The timer will 
+be able to accept varying times, but the work times will not be shorter than 10 
+minutes or longer than an hour.  The rest times shall not be shorter than 5 minutes
+or longer than an hour.
 
 ## Status and Roadmap
 
