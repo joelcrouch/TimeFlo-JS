@@ -25,7 +25,13 @@ These tasks should be completed in a top-down manner, ie get the requirements be
 Week 2:  Finish setting up gitlab on both dev. computers.   
          Finish the plan, and requirements document. 
          Begin to formulate generally how the code should work.
-Week 3:  Write and test the code.  
+Week 3:  Write and test the code.   
+        Make an HTML timer. 20 minutes
+        Make an HTML button for work and rest times. 10 minutes
+        Pass that appropriate data to timer. one hour
+        Show the time passing on the HTML page.  2 hours
+        Test:  Only numbers, and in a range specified.  Use drop down on html page to insure this.
+        READ the HTML documentation.  1 -2 hours.
          Begin the V&V.  
 
 ## Milestones and Deliverables
