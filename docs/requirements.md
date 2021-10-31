@@ -10,7 +10,7 @@ This is the time-flo Pomodoro style timer requiremnents document.  This requirem
 
 ### Purpose and Scope
 
-*You should describe this document by giving its purpose, scope.*
+*This requrements document is for developers to use, so they may know  what to make.
 
 ### Target Audience
 
@@ -23,7 +23,11 @@ document.*
 
 ## Product Overview
 
-*Give a high level description of the functionality of the project here.
+*The TimeFlo software will be a countdown timer.  It shall have inputs for work and rest times.
+It will have a pause, and stop button.  The pause button will pause the countdown timer at the current
+time, and the stop button will stop the countdown completely.
+
+Give a high level description of the functionality of the project here.
 Describe the purpose of this section. It may be useful to give your
 definition of a user, a stake holder and a use case. If there are scope
 limitations to the project, i.e. things you will not be doing, or are
@@ -60,19 +64,24 @@ participants, human or otherwise, and explain their roles.*
 
 ## Functional Requirements
 
-*Describe the purpose of this section and outline its contents. Only a
-few sentences are expected here. It may help to define a functional
-requirement.*
+The TimeFlo has some requirements that are required for it to work.
+It will be a Chrome based browser application, that will show time remaining 
+on a countdown timer.  Functioanal requirements are those that are required for it
+to work properly.
+
 
 ### *Functional Requirements 1*
 
-*Describe the first functional requirement. This is the meat of the
+*Timeflo will have 2 inputs-work and rest times. They will be 
+inputted into the timer function in TimeFlo.
+Describe the first functional requirement. This is the meat of the
 document, so be sure to use precise language. Include diagrams when
 appropriate. Break this into a list of sub-requirements as needed.*
 
 ### *Functional Requirement 2*
 
-*Etc.*
+*TimeFlo will have a pause and a stop button
+Etc.*
 
 ## Extra-functional Requirements
 
