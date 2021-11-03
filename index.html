@@ -20,6 +20,14 @@
                 <div class="inside">Seconds</div>
             </div>
         </div>
+        <h2>Enter the work time and rest time below.</h2>
+        <form>
+            <br><br><label for ="worktime">Work time:</label>
+            <input type="number" id="worktime" name="worktime" min ="5" max ="60"><br><br>
+            <label for="resttime">Rest Time:</label>
+            <input type="number" id="resttime" name="resttime" min ="5" max ="15"><br><br>
+        <form>
+        <button onclick="alltogether(document.getElementById("worktime").value, document.getElementById("resttime").value)">START</button>
     <script src ="src/js/main.js"></script>
 </body>
 </html>
