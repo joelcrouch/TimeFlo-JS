@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>
-        TimeFlo
-    </title>
-
-    <link rel = "stylesheet" href="src/css/style.css" type="text/css">
-</head>
-    
-<body>
-    <h1>Welcome to TimeFlo</h1>
-        <div id="Pomodortimer">
-            <div>
-                <span class="minutes"></span>
-                <div class="inside">Minutes</div>
-            </div>
-            <div>
-                <span class="seconds"></span>
-                <div class="inside">Seconds</div>
-            </div>
-        </div>
-        <h2>Enter the work time and rest time below.</h2>
-        <form>
-            <br><br><label for ="worktime">Work time:</label>
-            <input type="number" id="worktime" name="worktime" min ="5" max ="60"><br><br>
-            <label for="resttime">Rest Time:</label>
-            <input type="number" id="resttime" name="resttime" min ="5" max ="15"><br><br>
-        <form>
-        <button onclick="alltogether(document.getElementById("worktime").value, document.getElementById("resttime").value)">START</button>
-    <script src ="src/js/main.js"></script>
-</body>
+	<head>
+		<title>TimeFlo</title>
+        <link rel = "stylesheet" href="src/css/style.css" type="text/css">
+	</head>
+	<body>
+        <br><br><label for ="work">Work time:</label>
+            <input type="number" name="work" id="work" min ="5" max ="60"><br>
+        <br><br><label for ="rest">Rest time:</label>
+            <input type="number" name="rest" id="rest" min ="5" max ="15"><br><br>
+		<button onclick ="timer(document.getElementById('work').value, document.getElementById('rest').value)">START</button>
+        <h1 id="clock">0:00</h1>
+        <script src ="src/js/main.js"></script>
+    </body>
 </html>
