@@ -1,58 +1,14 @@
-h1{ 
-    color: tomato;
-    font-weight: 100;
-    font-size: 40px;
-    margin: 40px 0px 20px;
-    text-align: left;
+body { 
+    font-family: sans-serif;color:#333;
 }
-
-#Pomodortimer{
-    font-family: system-ui;
-    color: black;
-    display: inline-block;
-    font-weight: 200;
-    text-align: center;
-    font-size: 45px;
-  }
-  
-  #Pomodortimer{
-    font-family: system-ui;
-    color: black;
-    display: inline-block ;
-    font-weight: 200;
-    text-align: center;
-    font-size: 45px;
-  }
-  
-  #Pomodortimer > div{
-    padding: 15px;
-    border-radius: 3px;
-    background: yellow;
-    display: inline-block;
-    text-align: center;
-  }
-  
-  #Pomodorotimer div > span{
-    padding: 20px;
-    border-radius: 3px;
-    background:yellow;
-    display: inline-block;
-    text-align: center;
-  }
-  
-  .inside{
-    padding-top: 5px;
-    font-size: 20px;
-  }
-
-  h2{
-    color: tomato;
-    font-weight: 50;
-    font-size: 20px;
-    margin: 40px 0px 20px;
-    text-align: left;
-  }
-  form label {
+#START{ 
+    width:800px;
+    margin:auto;
+}
+h1 { 
+    font-size:5em;
+}
+form label {
     display: inline-block;
     width: 60px;
     padding: 15px;
@@ -61,11 +17,5 @@ h1{
     display: inline-block;
     text-align: center;
   }
-  
-  form div {
-    margin-bottom: 30px;
-  }
-  
-   
 
 
