@@ -11,7 +11,7 @@ let countUp;//variable for setinterval, so you can stop it see w3cschool for inf
 const display = document.querySelector('.clock');
 
 
-function showminsandsec() {
+function showMinsAndSecs() {
  
     let mins = Math.floor((total % 3600)/60);//see w3c school for date parsing
     let sec = Math.floor(total % 60)
@@ -21,83 +21,82 @@ function showminsandsec() {
 
     total++;
 
-    var worktime = document.getElementById('work').value
-    worktime = worktime *2;//input time (min-sec)
-    var resttime = document.getElementById('rest').value
-    resttime = resttime *2;
-    if(total==worktime && pomodoro==0){
+    var workTime = document.getElementById('work').value
+    workTime = workTime *2;//input time (min-sec)
+    var restTime = document.getElementById('rest').value
+    restTime = restTime *2;
+    if(total==workTime && pomodoro==0){
         clearInterval(countUp);
-        startBtn.disabled = false;
+        startButton.disabled = false;
         total = 0;
         pomodoro++;
-        //showminsandsec();
-        countUp = setInterval(showminsandsec, 1000);
-        startBtn.disabled = true;
+        //showMinsAndSecs();
+        countUp = setInterval(showMinsAndSecs, 1000);
+        startButton.disabled = true;
         
     }//made it to the work or rest time
-    if(total == resttime && pomodoro==1){
+    if(total == restTime && pomodoro==1){
         clearInterval(countUp);
-        startBtn.disabled = false;
+        startButton.disabled = false;
         total = 0;
         pomodoro--;
-        //showminsandsec();
-    }
-  
-    
+        //showMinsAndSecs();
+    }  
 }
 
 //hold onot these constants
-const startBtn = document.querySelector('.start');
-const pauseBtn = document.querySelector('.pause');
-const resetBtn = document.querySelector('.reset');
+const startButton = document.querySelector('.start');
+const pauseButton = document.querySelector('.pause');
+const resetButton = document.querySelector('.reset');
 
 //see eloquent javscript.net/15_evnent for using thins method of event listeners
-startBtn.addEventListener('click', () => {
-        countUp = setInterval(showminsandsec, 1000);
-        startBtn.disabled = true;
+startButton.addEventListener('click', () => {
+        countUp = setInterval(showMinsAndSecs, 1000);
+        startButton.disabled = true;
     });
-pauseBtn.addEventListener('click', () => {
+pauseButton.addEventListener('click', () => {
     clearInterval(countUp);
-    startBtn.disabled = false;
+    startButton.disabled = false;
 });
-resetBtn.addEventListener('click', () => {
+resetButton.addEventListener('click', () => {
     clearInterval(countUp);
-    startBtn.disabled = false;
+    startButton.disabled = false;
     total = 0;
     pomodoro=0;
-    showminsandsec();
+    showMinsAndSecs();
 });
    
 function dostuff(){
-    var worktime = document.getElementById('work').value
-    worktime = worktime *1;//input time (min-sec)
-    var resttime = document.getElementById('rest').value
-    resttime = resttime *1;
+    var workTime = document.getElementById('work').value
+    workTime = workTime *1;//input time (min-sec)
+    var restTime = document.getElementById('rest').value
+    restTime = restTime *1;
     var ct =0;
     for(ct;ct<2;ct++){
-        if(total==worktime && pomodoro==0){
+        if(total==workTime && pomodoro==0){
             clearInterval(countUp);
-            startBtn.disabled = false;
+            startButton.disabled = false;
             total = 0;
             pomodoro++;
-            showminsandsec();
-            countUp = setInterval(showminsandsec, 1000);
-            startBtn.disabled = true;
+            showMinsAndSecs();
+            countUp = setInterval(showMinsAndSecs, 1000);
+            startButton.disabled = true;
             
         }//made it to the work or rest time
-        if(total == resttime && pomodoro==1){
+        if(total == restTime && pomodoro==1){
             clearInterval(countUp);
-            startBtn.disabled = false;
+            startButton.disabled = false;
             total = 0;
             pomodoro--;
-            showminsandsec();
+            showMinsAndSecs();
         }
     }
     
 } 
 //dostuff();
-showminsandsec();  
+showMinsAndSecs();  
 
+    
 //Pause?
 //Stop[p;]
 
