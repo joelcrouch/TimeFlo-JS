@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>TimeFlo</title>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>TimeFlo</title>
         <link rel = "stylesheet" href="src/css/style.css" type="text/css">
-	</head>
-	<body>
-        <br><br><label for ="work">Work time:</label>
+     </head>
+    <body>
+        <p class ="clock"></p>
+        <p>
+            <button class="start">Start</button>
+            <button class="pause">Pause</button>
+            <button class="reset">Reset</button>
+        </p>
+        <br><label for ="work">Work time:</label>
             <input type="number" name="work" id="work" min ="5" max ="60"><br>
-        <br><br><label for ="rest">Rest time:</label>
+        <br><label for ="rest">Rest time:  </label>
             <input type="number" name="rest" id="rest" min ="5" max ="15"><br><br>
-		<button onclick ="timer(document.getElementById('work').value, document.getElementById('rest').value)">START</button>
-        <h1 id="clock">0:00</h1>
         <script src ="src/js/main.js"></script>
-    </body>
+  </body>
 </html>
