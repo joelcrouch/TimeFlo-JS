@@ -22,29 +22,70 @@ function showMinsAndSecs() {
     total++;
 
     var workTime = document.getElementById('work').value
-    workTime = workTime *2;//input time (min-sec)
+    workTime = workTime *1;//input time (min-sec)
     var restTime = document.getElementById('rest').value
-    restTime = restTime *2;
+    restTime = restTime *1;
+    var extraRest= restTime + restTime;
+ 
     if(total==workTime && pomodoro==0){
         clearInterval(countUp);
         startButton.disabled = false;
         total = 0;
         pomodoro++;
-        //showMinsAndSecs();
         countUp = setInterval(showMinsAndSecs, 1000);
-        startButton.disabled = true;
-        
+        //startButton.disabled = true;
     }//made it to the work or rest time
     if(total == restTime && pomodoro==1){
         clearInterval(countUp);
         startButton.disabled = false;
         total = 0;
-        pomodoro--;
-        //showMinsAndSecs();
-    }  
+        pomodoro++;
+        countUp = setInterval(showMinsAndSecs, 1000);//1
+    }
+    if(total==workTime && pomodoro==2){
+        clearInterval(countUp);
+        startButton.disabled = false;
+        total = 0;
+        pomodoro++;
+        countUp = setInterval(showMinsAndSecs, 1000);
+    }
+    if(total == restTime && pomodoro==3){
+        clearInterval(countUp);
+        startButton.disabled = false;
+        total = 0;
+        pomodoro++;
+        countUp = setInterval(showMinsAndSecs, 1000);//2
+    }
+    if(total==workTime && pomodoro==4){
+        clearInterval(countUp);
+        startButton.disabled = false;
+        total = 0;
+        pomodoro++;
+        countUp = setInterval(showMinsAndSecs, 1000);
+    }
+    if(total == restTime && pomodoro==5){
+        clearInterval(countUp);
+        startButton.disabled = false;
+        total = 0;
+        pomodoro++;
+        countUp = setInterval(showMinsAndSecs, 1000);//3
+    }
+    if(total==workTime && pomodoro==6){
+        clearInterval(countUp);
+        startButton.disabled = false;
+        total = 0;
+        pomodoro++;
+        countUp = setInterval(showMinsAndSecs, 1000);
+    }
+    if(total == extraRest && pomodoro==7){
+        clearInterval(countUp);
+        startButton.disabled = false;
+        total = 0;
+        pomodoro++;
+    }
 }
 
-//hold onot these constants
+//hold onot these constants  see mozilla docs for "query selector"
 const startButton = document.querySelector('.start');
 const pauseButton = document.querySelector('.pause');
 const resetButton = document.querySelector('.reset');
@@ -65,36 +106,6 @@ resetButton.addEventListener('click', () => {
     pomodoro=0;
     showMinsAndSecs();
 });
-   
-function dostuff(){
-    var workTime = document.getElementById('work').value
-    workTime = workTime *1;//input time (min-sec)
-    var restTime = document.getElementById('rest').value
-    restTime = restTime *1;
-    var ct =0;
-    for(ct;ct<2;ct++){
-        if(total==workTime && pomodoro==0){
-            clearInterval(countUp);
-            startButton.disabled = false;
-            total = 0;
-            pomodoro++;
-            showMinsAndSecs();
-            countUp = setInterval(showMinsAndSecs, 1000);
-            startButton.disabled = true;
-            
-        }//made it to the work or rest time
-        if(total == restTime && pomodoro==1){
-            clearInterval(countUp);
-            startButton.disabled = false;
-            total = 0;
-            pomodoro--;
-            showMinsAndSecs();
-        }
-    }
-    
-} 
-//dostuff();
-showMinsAndSecs();  
 
     
 //Pause?
