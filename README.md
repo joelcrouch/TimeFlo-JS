@@ -23,7 +23,7 @@ doesn't. Describe "future work" for this project.*
 
 ## Build and Run
 
-Download the files into a folder.   Open up the HTML file in a Chrome browser. Fill in the work and rest times and press the start button.  If you want to reset the time flo timer to zero, press the reset button. If you want to pause the timer, press the pause button.
+Download the index.html, main.js, and stlyes.css files into a folder.   Open up the HTML file in a Chrome browser. Fill in the work and rest times and press the start button.  If you want to reset the time flo timer to zero, press the reset button. If you want to pause the timer, press the pause button.
 
 ## Development Docs
 
