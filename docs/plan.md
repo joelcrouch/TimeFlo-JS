@@ -36,15 +36,20 @@ Week 3:  Write and test the code.
 
 ## Milestones and Deliverables
 
-*Describe the purpose of this section and outline its
-contents. Describe the milestones on a high level.*
+The milesstones will depend on the shcedule. 
+Milestones for week 2 will be finishing setup, the plan an requirements documents.
+Milestone for week 3 will be implementing the code, and devising a V&V/test plan.
+Milestone # 4 will be deliverable (read: functional) TimeFlo product.
 
 ### *Milestone/Deliverable 1*
 
-*Explain what this milestone consists of. Identify the deliverable or
-deliverables that will be produced at this milestone. Generally describe
-what work will be done leading up to the conclusion of this milestone.*
+Milestone #1 will consist of reading Gitlab documentation, getting the plan and requirements documentation correct.
 
 ### *Milestone/Deliverable 2*
 
-*Etc.*
+Milesstone # 2 will consist of reading the appropriate MDN (Mozilla Dev. Network) documents, and writing a 
+HTML, CSS, and JS code to enact the TimeFlo.
+
+### *Milestone/Deliverable 3*
+
+Milestone # 4 will be putting all the doucumentation, and code together and delvering a functional TimeFlo.
