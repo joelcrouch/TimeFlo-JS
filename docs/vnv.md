@@ -44,14 +44,17 @@ The code will work or it will not.  If the timeflo times (work and rest) operate
 
 ## Unit Testing
 
-*Describe the purpose of this section and outline its contents. Name the
-units you will be testing and describe their functionality.*
+Unit test #1: Download the appropriate files, and put them into the same folder.  Open up the index.html, and enter
+the following into the "work" input area:  5, and enter the following into the rest input area: 5.
 
+The output should be: 5 min work, bell, 5 min rest, bell, 5 min work, bell, 5 min rest, bell, 5 min work, bell, 5 min rest, bell,5 min work, bell, 15 min rest,bell.
+
+Unit test #2:  Use an input of 6 for rest and 15 for work.  The output should be:15 min work, bell, 6 min rest, bell, 15 min work, bell, 6 min rest, bell, 15 min work, bell, 6 min rest, bell, 15 min work, bell, 16 min rest, bell,
+
+If the output does not match the above, it has failed.
 ### Strategy
 
-*Describe the strategy for unit testing of the project. Include items
-such as code coverage, differences between unit and integration testing,
-excluded code and why it's excluded, etc.*
+The above unit test will test all the code.
 
 ### Test Cases
 
