@@ -18,8 +18,11 @@ The target audience for this document is developer and end-user.
 
 ### Terms and Definitions
 
-*Define any terms or acronyms you will be using in the remainder of this
-document.*
+TimeFlo will refer to the "pomodoro" style timer being produced here.
+"Work" will refer to the amount of time designated a work time period.
+"Rest" will refer to the amount of time designated a work time period.
+
+
 
 ## Product Overview
 
@@ -40,13 +43,11 @@ here.*
 
 #### *Stakeholder 1*
 
-*List the first stakeholder or class of stakeholders if necessary.
-Describe, exactly, their role in the development, deployment, use,
-maintenance, etc. of the software.*
+The first stakeholder is the client.  Anyone who uses TimeFlo must know how to use it.*
 
 #### *Stakeholder 2*
 
-*Etc.*
+The second stakeholder is the developer.  They must know how to read the code, such that they may maintain it in the future.
 
 ### Use cases
 
@@ -72,29 +73,16 @@ to work properly.
 
 ### *Functional Requirements 1*
 
-*Timeflo will have 2 inputs-work and rest times. They will be 
-inputted into the timer function in TimeFlo.
-Describe the first functional requirement. This is the meat of the
-document, so be sure to use precise language. Include diagrams when
-appropriate. Break this into a list of sub-requirements as needed.*
+Timeflo will have 2 inputs-work and rest times. They will be 
+inputted into the timer function in TimeFlo. The timer will countdown 4 times
+with the work time, and 3 times with the rest time.  A fourth rest time will be longer 
+than the other rests.  In this case, it will be 10 minutes longer than the other rests.
+
 
 ### *Functional Requirement 2*
 
-*TimeFlo will have a pause and a stop button
-Etc.*
+TimeFlo will have a pause, start and reset buttons.  There must be an alarm of some variety to signal 
+an end to a time period.
 
-## Extra-functional Requirements
 
-*Describe the purpose of this section and outline its contents. Only a
-few sentences are expected here. It may help to define a nonfunctional
-requirement.*
 
-### *Extra-functional Requirement 1*
-
-*Describe the first nonfunctional requirement. This is the meat of the
-document, so be sure to use precise language. Include diagrams when
-appropriate.*
-
-### *Extra-functional Requirement 2*
-
-*Etc.*
