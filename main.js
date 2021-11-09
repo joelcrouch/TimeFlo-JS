@@ -1,8 +1,4 @@
-//alert("Timeflo!");//printf?
 
-//function that takes in time from user
-//const inputtime=userinput;
-//need a button to send minutes to function
 let pomodoro=0;
 let total = 0;
 let countUp;//variable for setinterval, so you can stop it see w3cschool for info
@@ -121,8 +117,6 @@ resetButton.addEventListener('click', () => {
 });
 
     
-//Pause?
-//Stop[p;]
 
 
 
